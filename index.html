@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preetika Anjana | Portfolio</title>
+  <meta name="description" content="Girly but professional portfolio of Preetika Anjana, MERN Stack Developer & Machine Learning Enthusiast. Exploring the intersection of coding, design, and AI.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="fevicon.png">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Sparkle Particle Canvas -->
+  <canvas id="sparkle-canvas"></canvas>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="custom-cursor"></div>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+  <header id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">PA.</a>
+      
+      <button class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#profiles" class="nav-link">Profiles</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <!-- Resume PDF Button -->
+        <a href="preetika_anjana_resume.pdf" class="resume-btn" id="resume-nav-btn">
+          <i data-lucide="file-text"></i> Resume
+        </a>
+        
+        <!-- Theme Switcher Button -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+          <i data-lucide="moon" id="theme-icon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="hero-greeting">
+            <i data-lucide="sparkles"></i> Welcome to my space
+          </div>
+          <h1 class="hero-title">I'm <span>Preetika Anjana</span></h1>
+          <div class="hero-subtitle">
+            <span id="typed-text"></span><span class="typed-cursor">|</span>
+          </div>
+          <p class="hero-bio">
+            A passionate B.Tech Computer Science student at VIT Bhopal. I craft responsive, beautiful, and performant web applications using the MERN & Next.js ecosystems, while exploring the intelligence of Machine Learning to build smart integrations.
+          </p>
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">
+              View My Work <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="preetika_anjana_resume.pdf" class="btn btn-secondary">
+              Read Resume <i data-lucide="external-link"></i>
+            </a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/preetikaanjana" target="_blank" class="social-icon" aria-label="GitHub">
+              <img src="github_logo.png" alt="GitHub Logo" style="width: 20px; height: 20px; object-fit: contain; filter: invert(1);">
+            </a>
+            <a href="https://www.linkedin.com/in/preetikaanjana/" target="_blank" class="social-icon" aria-label="LinkedIn">
+              <img src="linkedin_logo.png" alt="LinkedIn Logo" style="width: 20px; height: 20px; object-fit: contain; filter: invert(1);">
+            </a>
+            <a href="https://www.instagram.com/preetikaanjana/" target="_blank" class="social-icon" aria-label="Instagram">
+              <img src="instagram_logo.png" alt="Instagram Logo" style="width: 20px; height: 20px; object-fit: contain; filter: invert(1);">
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=preetikaanjana@gmail.com" target="_blank" class="social-icon" aria-label="Email">
+              <i data-lucide="mail"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-container reveal">
+          <div class="hero-image-bg"></div>
+          <div class="hero-image-wrapper">
+            <!-- Header Image copied from user repository -->
+            <img src="image.png" alt="Preetika Anjana">
+          </div>
+          <div class="hero-badge">
+            <div class="hero-badge-icon">
+              <i data-lucide="heart"></i>
+            </div>
+            <div class="hero-badge-text">
+              <h4>Design & Code</h4>
+              <p>MERN + AI/ML Enthusiast</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         QUOTES BANNER
+         ========================================== -->
+    <section class="quotes-section">
+      <div class="container quote-carousel reveal">
+        <p class="quote-content" id="quote-text">🌸 Coding in pastel and building dreams in pixels. 🌸</p>
+        <div class="quote-author">
+          <i data-lucide="sparkle"></i> Preetika Anjana
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         ABOUT ME
+         ========================================== -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">A Little Story</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-left reveal">
+            <div class="about-card">
+              <h3 class="about-card-title">
+                <i data-lucide="sparkles"></i> Designing Performant Experiences
+              </h3>
+              <p class="about-card-text">
+                I believe that programming is not just about writing logical instructions, but an art of creating visual and functional harmony. I specialize in building user-focused web applications with React, Node.js, and modern styling solutions.
+              </p>
+              <p class="about-card-text">
+                Currently transitioning into Machine Learning, I enjoy analyzing complex datasets, engineering smart neural models, and merging data science with creative frontend engineering.
+              </p>
+              <ul class="about-details-list">
+                <li class="about-details-item">
+                  <span class="about-details-label">University</span>
+                  <span class="about-details-val">VIT Bhopal</span>
+                </li>
+                <li class="about-details-item">
+                  <span class="about-details-label">Degree</span>
+                  <span class="about-details-val">B.Tech CSE</span>
+                </li>
+                <li class="about-details-item">
+                  <span class="about-details-label">Academic CGPA</span>
+                  <span class="about-details-val">8.47 / 10</span>
+                </li>
+                <li class="about-details-item">
+                  <span class="about-details-label">Graduation Year</span>
+                  <span class="about-details-val">Expected 2027</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="about-right-grid reveal">
+            <div class="info-box">
+              <div class="info-icon">
+                <i data-lucide="code-2"></i>
+              </div>
+              <h3 class="info-title">Web Developer</h3>
+              <p class="info-text">Crafting responsive and interactive interfaces using the React & Tailwind CSS ecosystems.</p>
+            </div>
+            
+            <div class="info-box">
+              <div class="info-icon">
+                <i data-lucide="brain-circuit"></i>
+              </div>
+              <h3 class="info-title">ML Enthusiast</h3>
+              <p class="info-text">Diving into computer vision (OpenCV), NLP, predictive modeling, and system architectures.</p>
+            </div>
+            
+            <div class="info-box">
+              <div class="info-icon">
+                <i data-lucide="award"></i>
+              </div>
+              <h3 class="info-title">Certifications</h3>
+              <p class="info-text">NPTEL Certified in Machine Learning & Marketing Analytics with outstanding performance.</p>
+            </div>
+            
+            <div class="info-box">
+              <div class="info-icon">
+                <i data-lucide="coffee"></i>
+              </div>
+              <h3 class="info-title">Lifelong Learner</h3>
+              <p class="info-text">To me, code is just another way to create pretty, functional, and impactful products.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TECH STACK / SKILLS
+         ========================================== -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">My Toolkit</span>
+          <h2 class="section-title">Tech Stack</h2>
+        </div>
+
+        <div class="tech-grid reveal">
+          <!-- Languages -->
+          <div class="tech-category-card">
+            <div class="tech-category-header">
+              <i class="tech-category-icon" data-lucide="code"></i>
+              <h3 class="tech-category-title">Languages</h3>
+            </div>
+            <div class="tech-list">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">C++</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+            </div>
+          </div>
+
+          <!-- Frameworks & Libs -->
+          <div class="tech-category-card">
+            <div class="tech-category-header">
+              <i class="tech-category-icon" data-lucide="layers"></i>
+              <h3 class="tech-category-title">Frameworks & Libs</h3>
+            </div>
+            <div class="tech-list">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express.js</span>
+              <span class="tech-tag">Tailwind CSS</span>
+            </div>
+          </div>
+
+          <!-- Machine Learning -->
+          <div class="tech-category-card">
+            <div class="tech-category-header">
+              <i class="tech-category-icon" data-lucide="brain"></i>
+              <h3 class="tech-category-title">AI & ML</h3>
+            </div>
+            <div class="tech-list">
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">MediaPipe</span>
+              <span class="tech-tag">NLP</span>
+              <span class="tech-tag">LLM Integration</span>
+            </div>
+          </div>
+
+          <!-- Databases & Cloud -->
+          <div class="tech-category-card">
+            <div class="tech-category-header">
+              <i class="tech-category-icon" data-lucide="database"></i>
+              <h3 class="tech-category-title">Databases</h3>
+            </div>
+            <div class="tech-list">
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">SQL</span>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="tech-category-card">
+            <div class="tech-category-header">
+              <i class="tech-category-icon" data-lucide="terminal"></i>
+              <h3 class="tech-category-title">Tools & Platforms</h3>
+            </div>
+            <div class="tech-list">
+              <span class="tech-tag">Git</span>
+              <span class="tech-tag">GitHub</span>
+              <span class="tech-tag">VS Code</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">Flask</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PROJECTS GALLERY
+         ========================================== -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">My Creations</span>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+
+        <div class="portfolio-filter reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Apps</button>
+          <button class="filter-btn" data-filter="ml">AI & ML</button>
+          <button class="filter-btn" data-filter="python">Python/Extension</button>
+        </div>
+
+        <div class="projects-grid reveal">
+          <!-- Lemonade -->
+          <div class="project-card" data-category="ml">
+            <div class="project-header-pattern"></div>
+            <div class="project-body">
+              <div class="project-tech-tags">
+                <span class="project-tech-tag">Python</span>
+                <span class="project-tech-tag">OpenCV</span>
+                <span class="project-tech-tag">MediaPipe</span>
+                <span class="project-tech-tag">LLM</span>
+              </div>
+              <h3 class="project-title">Lemonade</h3>
+              <p class="project-description">
+                Real-time posture correction and personalized fitness planning web application backed by advanced pose estimation.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/preetikaanjana" target="_blank" class="project-link project-link-primary">
+                  <i data-lucide="github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Diva -->
+          <div class="project-card" data-category="web">
+            <div class="project-header-pattern"></div>
+            <div class="project-body">
+              <div class="project-tech-tags">
+                <span class="project-tech-tag">React.js</span>
+                <span class="project-tech-tag">Python</span>
+                <span class="project-tech-tag">NLP</span>
+              </div>
+              <h3 class="project-title">Diva</h3>
+              <p class="project-description">
+                A social web platform empowering women globally through consolidated legal/educational resources and networks.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/preetikaanjana" target="_blank" class="project-link project-link-primary">
+                  <i data-lucide="github"></i> Source Code
+                </a>
+                <a href="https://github.com/preetikaanjana" target="_blank" class="project-link project-link-secondary">
+                  <i data-lucide="external-link"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mp3by4 -->
+          <div class="project-card" data-category="python">
+            <div class="project-header-pattern"></div>
+            <div class="project-body">
+              <div class="project-tech-tags">
+                <span class="project-tech-tag">Python</span>
+                <span class="project-tech-tag">Flask</span>
+                <span class="project-tech-tag">Gemini AI</span>
+                <span class="project-tech-tag">OpenCV</span>
+              </div>
+              <h3 class="project-title">Mp3by4</h3>
+              <p class="project-description">
+                A browser extension converting web article text into highly summarized, audio-narrated video reels.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/preetikaanjana" target="_blank" class="project-link project-link-primary">
+                  <i data-lucide="github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- WishBin -->
+          <div class="project-card" data-category="web">
+            <div class="project-header-pattern"></div>
+            <div class="project-body">
+              <div class="project-tech-tags">
+                <span class="project-tech-tag">React.js</span>
+                <span class="project-tech-tag">Node.js</span>
+                <span class="project-tech-tag">MongoDB</span>
+                <span class="project-tech-tag">Tailwind</span>
+              </div>
+              <h3 class="project-title">WishBin</h3>
+              <p class="project-description">
+                P2P marketplace application targeting college students looking to buy or sell campus essentials.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/preetikaanjana" target="_blank" class="project-link project-link-primary">
+                  <i data-lucide="github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kitchi -->
+          <div class="project-card" data-category="web">
+            <div class="project-header-pattern"></div>
+            <div class="project-body">
+              <div class="project-tech-tags">
+                <span class="project-tech-tag">React.js</span>
+                <span class="project-tech-tag">Material-UI</span>
+                <span class="project-tech-tag">Speech API</span>
+                <span class="project-tech-tag">Canvas</span>
+              </div>
+              <h3 class="project-title">Kitchi</h3>
+              <p class="project-description">
+                A voice-controlled cooking assistant web application that helps you follow cooking videos hands-free using voice commands, automatically detecting steps and ingredients.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/preetikaanjana/kitchi" target="_blank" class="project-link project-link-primary">
+                  <i data-lucide="github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Best Before -->
+          <div class="project-card" data-category="ml">
+            <div class="project-header-pattern"></div>
+            <div class="project-body">
+              <div class="project-tech-tags">
+                <span class="project-tech-tag">Python</span>
+                <span class="project-tech-tag">OpenCV</span>
+                <span class="project-tech-tag">Google Vision AI</span>
+                <span class="project-tech-tag">API</span>
+              </div>
+              <h3 class="project-title">Best Before</h3>
+              <p class="project-description">
+                An expiry date tracker grocery companion that warns you when items are nearing expiry, auto-generating product details from barcodes and recognizing dates from photos.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/preetikaanjana" target="_blank" class="project-link project-link-primary">
+                  <i data-lucide="github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ==========================================
+         CODING PLATFORMS & STATS
+         ========================================== -->
+    <section id="profiles">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Contributions</span>
+          <h2 class="section-title">GitHub Analytics</h2>
+        </div>
+
+        <div class="github-stats-container reveal">
+          <div class="stats-card">
+            <h3 class="stats-card-title" style="justify-content: center;">
+              <i data-lucide="github"></i> Activity Overview <span>@preetikaanjana</span>
+            </h3>
+            <div class="stats-visuals-centered">
+              <div class="stats-img-wrapper">
+                <img src="https://github-readme-activity-graph.vercel.app/graph?username=preetikaanjana&theme=rose-pine&hide_border=true" alt="GitHub Activity Graph">
+              </div>
+              <div class="stats-img-wrapper">
+                <img src="https://github-readme-stats.vercel.app/api?username=preetikaanjana&show_icons=true&theme=rose_pine&hide_border=true&rank_icon=github" alt="GitHub Stats Summary">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT SECTION
+         ========================================== -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Let's Connect</h2>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact details -->
+          <div class="contact-left reveal">
+            <div class="contact-info-card">
+              <h3 class="contact-info-title">Drop me a line!</h3>
+              <p class="about-card-text">
+                I am open to summer internships, full-time MERN developer opportunities, and research projects in Machine Learning. Let's build something beautiful together!
+              </p>
+              
+              <div class="contact-methods">
+                <div class="contact-method">
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=preetikaanjana@gmail.com" target="_blank" class="contact-method-icon" aria-label="Send Email">
+                    <i data-lucide="mail"></i>
+                  </a>
+                  <div class="contact-method-text">
+                    <h5>Email</h5>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=preetikaanjana@gmail.com" target="_blank">preetikaanjana@gmail.com</a>
+                  </div>
+                </div>
+
+                <div class="contact-method">
+                  <a href="https://www.linkedin.com/in/preetikaanjana/" target="_blank" class="contact-method-icon" aria-label="LinkedIn Profile">
+                    <img src="linkedin_logo.png" alt="LinkedIn Logo" style="width: 24px; height: 24px; object-fit: contain; filter: invert(1);">
+                  </a>
+                  <div class="contact-method-text">
+                    <h5>LinkedIn</h5>
+                    <a href="https://www.linkedin.com/in/preetikaanjana/" target="_blank">linkedin.com/in/preetikaanjana</a>
+                  </div>
+                </div>
+
+                <div class="contact-method">
+                  <a href="https://github.com/preetikaanjana" target="_blank" class="contact-method-icon" aria-label="GitHub Profile">
+                    <img src="github_logo.png" alt="GitHub Logo" style="width: 24px; height: 24px; object-fit: contain; filter: invert(1);">
+                  </a>
+                  <div class="contact-method-text">
+                    <h5>GitHub</h5>
+                    <a href="https://github.com/preetikaanjana" target="_blank">github.com/preetikaanjana</a>
+                  </div>
+                </div>
+                
+                <div class="contact-method">
+                  <div class="contact-method-icon">
+                    <i data-lucide="phone"></i>
+                  </div>
+                  <div class="contact-method-text">
+                    <h5>Phone</h5>
+                    <p>+91 6263688330</p>
+                  </div>
+                </div>
+
+                <div class="contact-method">
+                  <div class="contact-method-icon">
+                    <i data-lucide="map-pin"></i>
+                  </div>
+                  <div class="contact-method-text">
+                    <h5>Location</h5>
+                    <p>VIT Bhopal, Madhya Pradesh, India</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-right reveal">
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Full Name</label>
+                <input type="text" id="form-name" class="form-input" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="form-email" class="form-label">Email Address</label>
+                <input type="email" id="form-email" class="form-input" placeholder="Your email address" required>
+              </div>
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message</label>
+                <textarea id="form-message" class="form-input" placeholder="Write a note..." required></textarea>
+              </div>
+              <button type="submit" class="btn-submit" id="btn-submit">
+                Send Message <i data-lucide="send"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer>
+    <div class="container footer-content">
+      <a href="#hero" class="footer-logo">PA.</a>
+      <div class="footer-socials">
+        <a href="https://github.com/preetikaanjana" target="_blank" class="social-icon" aria-label="GitHub">
+          <img src="github_logo.png" alt="GitHub Logo" style="width: 20px; height: 20px; object-fit: contain; filter: invert(1);">
+        </a>
+        <a href="https://www.linkedin.com/in/preetikaanjana/" target="_blank" class="social-icon" aria-label="LinkedIn">
+          <img src="linkedin_logo.png" alt="LinkedIn Logo" style="width: 20px; height: 20px; object-fit: contain; filter: invert(1);">
+        </a>
+        <a href="https://www.instagram.com/preetikaanjana/" target="_blank" class="social-icon" aria-label="Instagram">
+          <img src="instagram_logo.png" alt="Instagram Logo" style="width: 20px; height: 20px; object-fit: contain; filter: invert(1);">
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=preetikaanjana@gmail.com" target="_blank" class="social-icon" aria-label="Email">
+          <i data-lucide="mail"></i>
+        </a>
+      </div>
+      <p class="footer-quote">
+        "🌸 Coding in pastel and building dreams in pixels. 🌸"
+      </p>
+      <p class="footer-copy">
+        &copy; 2026 Preetika Anjana. Crafted with <heart>❤</heart> & code.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JS Scripts -->
+  <script src="script.js?v=1.2"></script>
+</body>
+</html>
